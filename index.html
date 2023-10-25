@@ -1,0 +1,56 @@
+<DOCTYPE! html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="description" content="a site to find a game to play">
+	<title>Pixenigma</title>
+
+</head>
+<body>
+	<div class="banner">
+		<div class="container">
+		   <h1>Pixenigma</h1>
+		   <h2>Find a game !</h2>
+		   		<a class="btn" href="https://glenn-lab-chvt.github.io/Registration/">Start now !</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="avatar">
+			  <h2>Avatar Profile Picture</h2>
+                <div id="avatar-container">
+                 <img id="avatar" src="default-avatar.jpg" alt="Profile Picture">
+                 <br>
+                 <input type="file" id="avatar-input" accept="image/*">
+                 <label for="avatar-input">Change Avatar</label>
+                </div>
+
+                <script>
+                 const avatar = document.getElementById('avatar');
+                 const avatarInput = document.getElementById('avatar-input');
+
+                 avatarInput.addEventListener('change', function () {
+                 const file = avatarInput.files[0];
+                 if (file) {
+                     const reader = new FileReader();
+                      reader.onload = function (e) {
+                         avatar.src = e.target.result;
+                 };
+                 reader.readAsDataURL(file);
+                   }
+                 });
+                </script>
+		</div>
+<div data-tf-widget="BPj7O7gY" data-tf-opacity="100" data-tf-iframe-props="title=Game criteria" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;">
+	
+</div>
+<script src="//embed.typeform.com/next/embed.js"></script>
+
+	<div class="container">
+				     <a class="btn" href="https://glenn-lab-chvt.github.io/My-Profile/">See my profile !</a>
+	</div>
+
+</body>
+</html>

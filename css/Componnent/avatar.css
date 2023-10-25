@@ -1,0 +1,20 @@
+<style>
+        #avatar-container {
+            text-align: center;
+        }
+        #avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        label {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+</style>
